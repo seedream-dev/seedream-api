@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "seedream-api"
+version = "0.1.0"
+description = "Python client for the Seedream API — ByteDance's Seedream 5.0 Pro region-precise image editing through a hosted endpoint"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [{name = "seedream-dev"}]
+keywords = ["ai api", "seedream", "seedream api", "seedream python", "seedream-5-pro-edit", "synexa"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = ["httpx>=0.24"]
+
+[project.urls]
+Homepage = "https://github.com/seedream-dev/seedream-api"
+Documentation = "https://seedream-dev.github.io/seedream-api/"
+"Hosted model" = "https://synexa.ai/explore/bytedance/seedream-5-pro-edit?utm_source=github&utm_medium=ugc&utm_campaign=seedream-dev&utm_content=pyproject&utm_term=tier-a"
+
+[tool.setuptools.packages.find]
+include = ["seedream_api*"]
